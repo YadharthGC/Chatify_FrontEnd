@@ -1,0 +1,23 @@
+.receiverSection {
+  font-family: "Markazi Text", serif;
+  flex: 0.6;
+  height: 100%;
+  .receiverBox {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    h3 {
+      margin: 0px;
+      font-weight: 100;
+    }
+    .iconHeader {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #accIcon {
+      width: 40px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.chatifySection {
+  font-family: "Markazi Text", serif;
+  padding: 20px 50px;
+  background-color: #d9d9d9;
+}
+.headerSection {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  /* height: 5%; */
+}

@@ -1,0 +1,33 @@
+.chatSection {
+  margin-top: 3%;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  .chatBox {
+    .chattingDiv {
+      border: solid 1px lightgray;
+      margin-bottom: 5px;
+      padding: 0px 8px;
+      h2,
+      h3 {
+        margin: 0px;
+      }
+    }
+
+    .chattingDiv.sender {
+      h2,
+      h3 {
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+
+    .chattingDiv.receiver {
+      h2,
+      h3 {
+        display: flex;
+        justify-content: flex-start;
+      }
+    }
+  }
+}

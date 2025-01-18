@@ -1,0 +1,23 @@
+.userSection {
+  flex: 0.4;
+  height: 100%;
+  .userBox {
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+
+    .accountCircleTag {
+      width: 80%;
+    }
+    .extraIcons {
+      width: 20%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    h3 {
+      margin: 0px;
+    }
+  }
+}
