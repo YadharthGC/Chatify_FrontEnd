@@ -23,10 +23,10 @@ export default function Login() {
         })
         .then((res) => {
           console.log(res);
-          window.localStorage.setItem("jwt", res.data.token);
-          window.localStorage.setItem("userName", res.data.name);
+          // window.localStorage.setItem("jwt", res.data.token);
+          // window.localStorage.setItem("userName", res.data.name);
           window.localStorage.setItem("userId", res.data.id);
-          dispatch(handleMainUser(res.data.userName));
+          // dispatch(handleMainUser(res.data.userName));
           navigate("/chatify");
         })
         .catch((err) => console.log(err));

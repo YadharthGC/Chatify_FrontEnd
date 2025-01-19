@@ -15,10 +15,7 @@ export default function Register() {
 
   const handleRegister = async () => {
     try {
-      if (password !== confirmPassword) {
-        return;
-      }
-      console.log(email, password);
+      console.log(email, password, name);
       await axios
         .post(hostName + "chat/auth/signup", {
           email: email,
