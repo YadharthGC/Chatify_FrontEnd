@@ -21,13 +21,13 @@ export default function Login() {
           email: email,
           password: password,
         })
-        .then((res) => {
+        .then(async (res) => {
           console.log(res);
           // window.localStorage.setItem("jwt", res.data.token);
           // window.localStorage.setItem("userName", res.data.name);
           window.localStorage.setItem("userId", res.data.id);
           // dispatch(handleMainUser(res.data.userName));
-          navigate("/chatify");
+          await navigate("/chatify/" + res.data.id);
         })
         .catch((err) => console.log(err));
     } catch (err) {

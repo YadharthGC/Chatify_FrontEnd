@@ -3,6 +3,7 @@ import ReceiverSection from "./components/Header/receiver";
 import { BrowserRouter, Routes, Route } from "react-router";
 import Login from "./AuthComponents/login";
 import Register from "./AuthComponents/register";
+import ChatPage from "./chatComponents/chatPage";
 
 function App() {
   return (
@@ -12,15 +13,7 @@ function App() {
           <Route path="/" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/" element={<Login />} />
-          <Route
-            path="/chatify"
-            element={
-              <div className="headerSection">
-                <UserSection />
-                <ReceiverSection />
-              </div>
-            }
-          />
+          <Route path="/chatify/:id" element={<ChatPage />} />
         </Routes>
       </BrowserRouter>
     </>

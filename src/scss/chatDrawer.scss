@@ -1,0 +1,47 @@
+.receiverBox {
+  font-family: "Markazi Text", serif;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+  h3 {
+    margin: 0px;
+    font-weight: 100;
+  }
+  .iconHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #accIcon {
+    width: 40px;
+  }
+
+  h3 {
+    margin: 0px;
+    font-weight: 100;
+  }
+  .iconHeader {
+    flex: 0.2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .userDetails {
+    flex: 0.8;
+  }
+  svg {
+    font-size: 40px;
+  }
+  div {
+    max-width: 150px; /* Set the max-width as per your layout */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .userName {
+    font-weight: 900;
+  }
+}
